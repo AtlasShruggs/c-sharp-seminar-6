@@ -1,5 +1,7 @@
-﻿Console.WriteLine("Введите номер задачи");
-int exNum = int.Parse(Console.ReadLine());
+﻿while (true)
+{Console.WriteLine("Введите номер задачи");
+try
+{int exNum = int.Parse(Console.ReadLine());
 if (exNum == 41)
 {
     Console.WriteLine("Сколько чисел вы хотите ввести?");
@@ -49,3 +51,12 @@ else if (exNum == 43)
     }
 
 }
+else
+{
+    Console.WriteLine("Такой задачи нет");
+}
+}
+catch
+{
+    Console.WriteLine("Вы вводите какую-то дичь");
+}}
